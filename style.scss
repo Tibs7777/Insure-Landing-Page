@@ -85,7 +85,7 @@
 
     &__burger{
         cursor: pointer;
-        transition: .2s ease-in-out;
+        transition: filter .2s ease-in-out;
 
         &--nav-open{
             content: url(./images/icon-close.svg);
@@ -180,7 +180,7 @@
     text-transform: uppercase;
     font-size: 13px;
     cursor: pointer;
-    transition: 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
 
     &--top {
         border: 1.5px solid #FFF;
@@ -258,7 +258,6 @@
 
 .services {
     
-
     &__block{
         margin-bottom: 56px;
 
@@ -442,7 +441,7 @@
                 position: absolute;
                 width: 400px;
                 right: 8%;
-                top: 400px;
+                top: 415px;
                 content: url(./images/image-intro-desktop.jpg);
             }
     
@@ -539,6 +538,10 @@
         &__title{
             font-size: 72px;
             line-height: 0.889em;
+        }
+
+        &__paragraph{
+            margin-top: 2rem;
         }
 
         &::before {

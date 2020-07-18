@@ -104,8 +104,10 @@ body.nav--open {
 
 .header__burger {
   cursor: pointer;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
+  -webkit-transition: -webkit-filter .2s ease-in-out;
+  transition: -webkit-filter .2s ease-in-out;
+  transition: filter .2s ease-in-out;
+  transition: filter .2s ease-in-out, -webkit-filter .2s ease-in-out;
 }
 
 .header__burger--nav-open {
@@ -201,8 +203,8 @@ body.nav--open {
   text-transform: uppercase;
   font-size: 13px;
   cursor: pointer;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
 }
 
 .link-border--top {
@@ -457,7 +459,7 @@ body.nav--open {
     position: absolute;
     width: 400px;
     right: 8%;
-    top: 400px;
+    top: 415px;
     content: url(./images/image-intro-desktop.jpg);
   }
   .wrapper--middle {
@@ -542,6 +544,9 @@ body.nav--open {
   .top-text__title {
     font-size: 72px;
     line-height: 0.889em;
+  }
+  .top-text__paragraph {
+    margin-top: 2rem;
   }
   .top-text::before {
     content: "";
